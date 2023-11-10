@@ -14,7 +14,6 @@ app = FastAPI()
 
 X_test = pd.read_csv("X_test.csv")
 X_train = pd.read_csv("X_train.csv")
-y_train = pd.read_csv("y_train.csv")
 
 class request_body(BaseModel):
     client_id : int 

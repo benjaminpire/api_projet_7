@@ -2,7 +2,7 @@
 from fastapi import FastAPI
 import uvicorn
 from pydantic import BaseModel
-import pickle as pkl
+import joblib
 import pandas as pd 
 import joblib
 import numpy as np
@@ -28,8 +28,8 @@ def main():
 def predict(data : request_body):
 
     # charge the model
-    with open('mlflow_model/best_model.pkl', 'rb') as model_path:
-        model = pkl.load(model_path)
+    with open('mlflow_model/best_model.joblib', 'rb') as model_path:
+        model = joblib.load(model_path)
     
     #récupération de l'interprétabilité :
     explainer = lime.lime_tabular.LimeTabularExplainer(

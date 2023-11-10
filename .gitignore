@@ -4,3 +4,5 @@ __pycache__
 ray_serve_api
 input
 Kernel_feature_engineering.ipynb
+docs
+cleaned_data.csv

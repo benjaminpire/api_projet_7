@@ -26,7 +26,7 @@ import API
 
 
 # charge the model
-with open('mlflow_model/best_model.pkl', 'rb') as model_path:
+with open('mlflow_model/best_model.joblib', 'rb') as model_path:
     model = pkl.load(model_path)
 X_test = pd.read_csv("X_test.csv")
 X_train = pd.read_csv("X_train.csv")

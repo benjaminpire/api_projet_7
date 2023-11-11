@@ -41,14 +41,14 @@ class Test_variable(unittest.TestCase):
         """
         Test that it can sum a list of integers
         """
-        pred = model.predict(X_test.loc[X_test["SK_ID_CURR"] == 160905])
+        pred = model.predict(X_test.loc[X_test["SK_ID_CURR"] == 106763])
         self.assertEqual(pred, 1)
 
     def test_probality(self):
         """
         Test that it can sum a list of integers
         """
-        proba_pred = model.predict_proba(X_test.loc[X_test["SK_ID_CURR"] == 160905])
+        proba_pred = model.predict_proba(X_test.loc[X_test["SK_ID_CURR"] == 106763])
         self.assertGreater(proba_pred[0][1], 0.82)
 
 """        

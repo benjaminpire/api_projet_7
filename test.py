@@ -1,5 +1,5 @@
 import unittest
-import pickle as pkl
+import joblib
 import pandas as pd 
 from pydantic import BaseModel
 import API
@@ -27,7 +27,7 @@ import API
 
 # charge the model
 with open('mlflow_model/best_model.joblib', 'rb') as model_path:
-    model = pkl.load(model_path)
+    model = joblib.load(model_path)
 X_test = pd.read_csv("X_test.csv")
 X_train = pd.read_csv("X_train.csv")
 y_train = pd.read_csv("y_train.csv")

@@ -69,4 +69,6 @@ def predict(data : request_body):
     print("this is it" + str(exp))
     return {'class' : valid_pret, 'proba' : proba, 'inter' : exp.as_list()}
 
-#'inter' : exp
+@app.get("/favicon.ico")
+async def get_favicon():
+    return FileResponse("favicon.ico")

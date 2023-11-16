@@ -1,6 +1,7 @@
 artifact_location: file:///C:/Users/white%20mamen/projets_openclasseroom/Projet_7/Pire_Benjamin_2_dossier_code_082023/mlruns/0
 creation_time: 1694531307804
 experiment_id: '0'
-last_update_time: 1694531307804
+last_update_time: 1700122625135
 lifecycle_stage: active
-name: Default
+name: newplace
+tags: {}

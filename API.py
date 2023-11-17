@@ -21,7 +21,7 @@ class request_body(BaseModel):
 # Defining path operation for root endpoint
 @app.get('/')
 def main():
-    return("hello, bienvenue dans mon api")
+    return "hello, bienvenue dans mon api"
     
 
 @app.post('/predict')

@@ -52,7 +52,7 @@ def main():
     y_train = pd.read_csv('y_train.csv')
     
     # Link to the url
-    MLFLOW_URI = 'http://127.0.0.1:8000/predict'
+    MLFLOW_URI = 'https://newprojet7-b66a612de84a.herokuapp.com/predict'
     
     # Initialisation des pages
     tab1, tab2, tab3 = st.tabs(["Informations client", "Comparaison avec d'autres clients", "Score interprétation"])

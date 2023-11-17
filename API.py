@@ -43,12 +43,8 @@ def predict(data : request_body):
         data_row=np.array(X_test.loc[X_test["SK_ID_CURR"] == data.client_id])[0], 
         predict_fn=model.predict_proba)
     # Extract relevant information from exp for JSON response
-    explanation_data = {
-        "as_list": exp.as_list(),
-        "show_table": exp.show_in_notebook(show_table=True)  
-    }
 
-    exp.show_in_notebook(show_table=True)
+
     
     
     # Predicting the Class
